@@ -8,141 +8,17 @@ public class Assassins {
   String[] match; 
   // SAMPLE NAMES 
   public Assassins() {
-    player.add("alisa topuz");
-    player.add("Leo tomes");
-    player.add("Amy griffith");
-    player.add("Massimo elrefaie");
-    player.add("William Booth");
-    player.add("Zain Nawaz");
-    player.add("Sam Henderson");
-    player.add("Liam Rohacek");
-    player.add("Amna yasir");
-    player.add("madi malloy-gomes");
-    player.add("Jessica Richardson");
-    player.add("Nishaan Roshan");
-    player.add("Emily Ackroyd");
-    player.add("Alex Wang");
-    player.add("Kristina Nikitopoulos");
-    player.add("Bella Bartlett");
-    player.add("Hajer Allani");
-    player.add("Sahar Sultani");
-    player.add("Adam Selim");
-    player.add("Enna Malhotra");
-    player.add("Katie Archer");
-    player.add("Jack Guillemette");
-    player.add("addison milton");
-    player.add("sophia mcdonald");
-    player.add("Michael Johnstone");
-    player.add("Saif akbar");
-    player.add("Brianna Varcoe");
-    player.add("James vosper");
-    player.add("Allison Kim");
-    player.add("Sami Gupta");
-    player.add("Abdul Haddad");
-    player.add("Bartu Bilgen");
-    player.add("Bridgett Burton");
-    player.add("Karim Abadeer");
-    player.add("Oscar Davies");
-    player.add("Lauren Heath");
-    player.add("Ella Carriere");
-    player.add("Matthew Kozanczyn");
-    player.add("Owen Luongo");
-    player.add("Chris Matthews");
-    player.add("Jack Janavicius");
-    player.add("Lina Alhamzawi");
-    player.add("Beatrice Abid");
-    player.add("Ivey Caldwell");
-    player.add("Cameron Grandfield");
-    player.add("JP Lopes");
-    player.add("Rowan Clements");
-    player.add("Rahul Patel");
-    player.add("Mousa Adnan");
-    player.add("Kate Viaene");
-    player.add("Ethan Wang");
-    player.add("Neha Gobin");
-    player.add("Sienna Coughlin");
-    player.add("Zahra Saeed");
-    player.add("Justin Yi");
-    player.add("Radu Romanovschi");
-    player.add("vivienne georgiou");
-    player.add("Ariel Huang");
-    player.add("Ethan Roberts");
-    player.add("Matthew Nikkari");
-    player.add("Amy Wang");
-    player.add("Selina Mancuso");
-    player.add("Ken Chen");
-    player.add("Ricardo Rodriguez");
-    player.add("Hashem Alqusus");
-    player.add("Erwin zhang");
-    player.add("Ryan stevens");
+    String rawNames = "alisa topuz Leo tomes Amy griffith Massimo elrefaie William Booth Zain Nawaz Sam Henderson Liam Rohacek Amna yasir madi malloy-gomes Jessica Richardson Nishaan Roshan Emily Ackroyd Alex Wang Kristina Nikitopoulos Bella Bartlett Hajer Allani Sahar Sultani Adam Selim Enna Malhotra Katie Archer Jack Guillemette addison milton sophia mcdonald Michael Johnstone Saif akbar Brianna Varcoe James vosper Allison Kim Sami Gupta Abdul Haddad Bartu Bilgen Bridgett Burton Karim Abadeer Oscar Davies Lauren Heath Ella Carriere Matthew Kozanczyn Owen Luongo Chris Matthews Jack Janavicius Lina Alhamzawi Beatrice Abid Ivey Caldwell Cameron Grandfield JP Lopes Rowan Clements Rahul Patel Mousa Adnan Kate Viaene Ethan Wang Neha Gobin Sienna Coughlin Zahra Saeed Justin Yi Radu Romanovschi vivienne georgiou Ariel Huang Ethan Roberts Matthew Nikkari Amy Wang Selina Mancuso Ken Chen Ricardo Rodriguez Hashem Alqusus Erwin zhang Ryan stevens Sachin Khandelwal Wesley Meynen Cassidy Armitage Sara solano Xavier baie Radu Stefan Jackson Bennitt Tameem Ghadri Adrian vedlin Rahil kochhar Karim Halwani Ashley Jarvis Theo Haag Britney Biney Oliver Baker Sureena Bhatia Hareem Shaikh Twheda Hassan Griffin Gault luca barbeito Tej Sangha Zainab Haroon Damian Desousa";
+    String[] namesArr = new String[400];
+    namesArr = rawNames.split("\\s+");
 
-    target.add("alisa topuz");
-    target.add("Leo tomes");
-    target.add("Amy griffith");
-    target.add("Massimo elrefaie");
-    target.add("William Booth");
-    target.add("Zain Nawaz");
-    target.add("Sam Henderson");
-    target.add("Liam Rohacek");
-    target.add("Amna yasir");
-    target.add("madi malloy-gomes");
-    target.add("Jessica Richardson");
-    target.add("Nishaan Roshan");
-    target.add("Emily Ackroyd");
-    target.add("Alex Wang");
-    target.add("Kristina Nikitopoulos");
-    target.add("Bella Bartlett");
-    target.add("Hajer Allani");
-    target.add("Sahar Sultani");
-    target.add("Adam Selim");
-    target.add("Enna Malhotra");
-    target.add("Katie Archer");
-    target.add("Jack Guillemette");
-    target.add("addison milton");
-    target.add("sophia mcdonald");
-    target.add("Michael Johnstone");
-    target.add("Saif akbar");
-    target.add("Brianna Varcoe");
-    target.add("James vosper");
-    target.add("Allison Kim");
-    target.add("Sami Gupta");
-    target.add("Abdul Haddad");
-    target.add("Bartu Bilgen");
-    target.add("Bridgett Burton");
-    target.add("Karim Abadeer");
-    target.add("Oscar Davies");
-    target.add("Lauren Heath");
-    target.add("Ella Carriere");
-    target.add("Matthew Kozanczyn");
-    target.add("Owen Luongo");
-    target.add("Chris Matthews");
-    target.add("Jack Janavicius");
-    target.add("Lina Alhamzawi");
-    target.add("Beatrice Abid");
-    target.add("Ivey Caldwell");
-    target.add("Cameron Grandfield");
-    target.add("JP Lopes");
-    target.add("Rowan Clements");
-    target.add("Rahul Patel");
-    target.add("Mousa Adnan");
-    target.add("Kate Viaene");
-    target.add("Ethan Wang");
-    target.add("Neha Gobin");
-    target.add("Sienna Coughlin");
-    target.add("Zahra Saeed");
-    target.add("Justin Yi");
-    target.add("Radu Romanovschi");
-    target.add("vivienne georgiou");
-    target.add("Ariel Huang");
-    target.add("Ethan Roberts");
-    target.add("Matthew Nikkari");
-    target.add("Amy Wang");
-    target.add("Selina Mancuso");
-    target.add("Ken Chen");
-    target.add("Ricardo Rodriguez");
-    target.add("Hashem Alqusus");
-    target.add("Erwin zhang");
-    target.add("Ryan stevens");
+    for (int i = 0; i < namesArr.length; i += 2) {
+      player.add(namesArr[i] + " " + namesArr[i + 1]);
+    }
+    
+    for (int i = 0; i < namesArr.length; i += 2) {
+      target.add(namesArr[i] + " " + namesArr[i + 1]);
+    }
     match = new String[player.size()]; 
   }
 
@@ -170,8 +46,7 @@ public class Assassins {
         }
       }
 
-      if (!p.equals(t) && !found)
-      {
+      if (!p.equals(t) && !found) {
         player.remove(0); 
         target.remove(randTarget); 
         match[i] = p + "-" +  t; 
