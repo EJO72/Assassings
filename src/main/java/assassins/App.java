@@ -43,13 +43,13 @@ public class App extends Application {
 
         Text title = new Text();
         title.setText("APHS ASSASSINS 2024");
-        title.setX(600);
+        title.setX(600 - 50);
         title.setY(100);
         title.setFont(Font.font("Impact", 50));
         title.setFill(Color.WHITE);
 
         Line tUnderLine = new Line();
-        tUnderLine.setStartX(600);
+        tUnderLine.setStartX(600 - 50);
         tUnderLine.setStartY(105);
         tUnderLine.setEndX(1040);
         tUnderLine.setEndY(105);
@@ -58,19 +58,19 @@ public class App extends Application {
 
         Image tImage = new Image("eagle.jpg");
         ImageView imageView1 = new ImageView(tImage);
-        imageView1.setX(1050);
+        imageView1.setX(1050 - 50);
         imageView1.setY(50);
         imageView1.setFitHeight(60);
         imageView1.setFitWidth(60);
 
         ImageView imageView2 = new ImageView(tImage);
-        imageView2.setX(530);
+        imageView2.setX(530 - 50);
         imageView2.setY(50);
         imageView2.setFitHeight(60);
         imageView2.setFitWidth(60);
 
         Button generate = new Button("Generate:");
-        generate.setLayoutX(530);
+        generate.setLayoutX(530 - 50);
         generate.setLayoutY(120);
         generate.setFont(Font.font("Impact", 20));
         generate.setOnAction(e -> {
@@ -81,13 +81,13 @@ public class App extends Application {
             Text list = new Text(results);
             list.setFont(Font.font("Trebuchet MS", 20));
             list.setFill(Color.BLACK);
-            list.setX(220);
+            list.setX(220 - 50);
             list.setY(180);
 
             ScrollPane scrollPane = new ScrollPane();
             scrollPane.setContent(list);
-            scrollPane.setPrefSize(450, 800);
-            scrollPane.setLayoutX(650);
+            scrollPane.setPrefSize(450, 700);
+            scrollPane.setLayoutX(650 - 50);
             scrollPane.setLayoutY(120);
 
             if (results != "") {
@@ -97,7 +97,7 @@ public class App extends Application {
         });
 
         Button copy = new Button("Copy");
-        copy.setLayoutX(530);
+        copy.setLayoutX(530 - 50);
         copy.setLayoutY(165);
         copy.setFont(Font.font("Impact", 20));
         copy.setOnAction(e -> {

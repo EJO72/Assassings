@@ -8,6 +8,7 @@ public class Assassins {
   String[] match; 
 
   public Assassins() {
+    // fill in names here
     String rawNames = "";
     String[] namesArr = new String[400];
     namesArr = rawNames.split("\\s+");
